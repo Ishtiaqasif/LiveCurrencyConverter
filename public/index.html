@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="img/exchange.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 text-center">
+                <div class="jumbotron" style="margin: 100px;">
+                    <img src="img/exchange.png" width="128px" height="128px" alt="">
+                    <h1 class="display-4" style="margin-bottom: 30px">Convert Currency</h1>
+
+                    <div class="">
+                    <input class="text-center" list="currency_from" id="currency_from_input" placeholder="Currency">
+                    <datalist id="currency_from">
+                    </datalist>
+                    <i class="fa fa-exchange" aria-hidden=""></i>
+                    <input class="text-center" list="currency_to" id="currency_to_input" placeholder="Currency">
+                    <datalist id="currency_to"></datalist>
+                    </div>
+
+                    
+                    <hr class="my-4">
+                    <input class="text-center" id="amount" placeholder="Amount">                    
+                    <i class="fa fa-exchange" aria-hidden=""></i>
+                    <input class="text-center" id="currency_to_output" placeholder="Click to convert">
+                    <div style="margin: 20px">
+                        
+                        <button class="btn btn-success" type="button" onclick="convertCurrency()">Convert</button>
+                        <!-- <button class="btn btn-danger" type="button" onclick="reset()">Reset</button> -->
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="footer" style="display:none; bottom: 0; right: 0; position: absolute;">
+            Icons made by <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

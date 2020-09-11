@@ -1,0 +1,25 @@
+{
+  "name": "livecurrencyconverter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ishtiaqasif/LiveCurrencyConverter.git"
+  },
+  "author": "Asif Ishtiaq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ishtiaqasif/LiveCurrencyConverter/issues"
+  },
+  "homepage": "https://github.com/Ishtiaqasif/LiveCurrencyConverter#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
