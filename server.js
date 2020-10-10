@@ -1,6 +1,6 @@
 let PORT = process.env.PORT || 3000;
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = "e1b0b1c78c56b9057b0fd92ba08527a4";//process.env.API_KEY;
 const express = require('express');
 const app = express();
 
