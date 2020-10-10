@@ -1,6 +1,4 @@
-if(process.env.NODE_ENV !== 'production'){
-    require('dotenv').config()
-}
+let PORT = process.env.PORT || 3000;
 
 const API_KEY = process.env.API_KEY;
 const express = require('express');
@@ -43,6 +41,6 @@ app.post('/api/convert',(req, res) => {
   });
 });
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     console.log('! -- Server Started -- !')
 });
